@@ -7,7 +7,7 @@ Homepage:
 ![image](https://user-images.githubusercontent.com/44784107/174414519-16282b02-7f66-4788-84a5-dc21757dc5ec.png)
 
 Note Section:
-https://gyazo.com/f79b2b316697c525f16877e07a6c9baf
+![image](https://user-images.githubusercontent.com/44784107/174414672-96e043a1-f595-49b4-b6e2-1390cf71b119.png)
 
 API Screenshot:
 ![image](https://user-images.githubusercontent.com/44784107/174414491-dcc26bcd-3a01-4764-936e-4bac6b462373.png)
