@@ -15,7 +15,6 @@ notes.get('/', (req, res) => {
 
 
 notes.post('/', (req, res) => {
-    console.log('bobby')
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         if (err) {
           console.error(err);
