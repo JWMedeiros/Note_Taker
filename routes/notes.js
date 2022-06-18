@@ -44,5 +44,25 @@ notes.post('/', (req, res) => {
         }
       });
 });
+
+notes.delete('/:id', (req, res) => {
+    const noteId = req.params.id;
+    fs.readFile('./db/db.json', 'utf8', (err, data) => {
+        if (err) {
+          console.error(err);
+        } else {
+          // Convert string into JSON object
+          const parsedNotes = JSON.parse(data);
+          const result = parsedNotes.filter((note) => note.id !== noteId);
+          // Write updated reviews back to the file
+          fs.writeFile('./db/db.json', JSON.stringify(result),
+            (writeErr) =>
+              writeErr
+                ? res.error(`Error in removing note`)
+                : res.json(`Note removed successfully 🚀`)
+          );
+        }
+      });
+});
   
   module.exports = notes;
